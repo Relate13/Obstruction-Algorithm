@@ -8,7 +8,7 @@ In a two-dimensional space, given $n$ non-overlapping circles, for any two circl
 
 ## Algorithm
 
-* **Naive Approach**: Brute force traverse each edge, complexity of $(O(n^3)$).
+* **Naive Approach**: Brute force traverse each edge, complexity of $(O(n^3))$.
 * **Optimized Solution**: For each circle, sort the other circles based on their distance to the circle (closest distance from center to a point on the circle), then traverse starting from the closest circles, calculating obstruction slopes for every other circle. Store these in an interval tree, and for each query, check if that angle is obstructed in the tree. The expected complexity in ideal conditions is $(O(n^2 log n))$.
 
 Inspired by **@NijikaIjichi** https://github.com/NijikaIjichi
